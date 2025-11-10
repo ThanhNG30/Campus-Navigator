@@ -1,0 +1,5 @@
+- [X] Create base model
+- [ ] Create navigation graph
+- [ ] Choose a backend
+- [ ] Develop the backend
+- [ ] Develop the frontend
