@@ -1,0 +1,20 @@
+# default to auto-normalization for all files
+* text=auto
+
+# force LF (Unix style) line endings for all text-based files
+*.py text eol=lf
+*.md text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.js text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+
+# treat Blender and image files as binary to prevent corruption
+*.blend binary
+*.png binary
+*.jpg binary
+*.jpeg binary
