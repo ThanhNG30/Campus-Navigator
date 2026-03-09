@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Campus Room Lookup</title>
-    <link rel="stylesheet" href="stylesheet.scss" />
-  </head>
-  <body>
-    <h1>Campus Room Lookup</h1>
 
-    <form id="room-lookup-form">
-      <label for="building">Building:</label>
-      <input type="text" id="building" name="building" required />
+<head>
+  <title>Campus Nav</title>
+  <!-- 
+        Campus Navigator
+        Filename: index.html
 
-      <label for="room-number">Room Number:</label>
-      <input type="text" id="room-number" name="room-number" required />
+        Author:   Thanh Van Nguyen & Arjun Pramanik
+        GitHub:   https://github.com/ThanhNG30/Campus-Navigator
 
-      <label for="course-id">Course ID:</label>
-      <input type="text" id="course-id" name="course-id" required />
+        Date:     9 March 2026
+  -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
 
-      <button type="submit">Lookup Room</button>
-    </form>
-  </body>
+<body>
+  <h1>Campus Room Lookup</h1>
+
+  <form action="http://127.0.0.1:5000" method="post">
+    <label for="building">Building:</label>
+    <!-- since we only have one building mapped right now -->
+    <input type="text" id="building" name="building" value="President's Place" required readonly>
+
+    <label for="room_number">Room Number:</label>
+    <input type="text" id="room_number" name="room_number" required>
+
+    <button type="submit">Lookup Room</button>
+  </form>
+
+</body>
+
 </html>
