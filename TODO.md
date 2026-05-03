@@ -27,8 +27,7 @@ Deliver a polished, reliable, mobile-friendly indoor navigation web app for Pres
 - [x] A* prototype exists in `main.py`
 - [x] Initial graph data exists in `campus_map.py`
 - [x] 3D model exists in Blender (per `PLAN.md`)
-- [ ] Frontend is currently a placeholder (`index.html`) 
-- [ ] No integrated Flask route API contract yet
+- [ ] Frontend integrates Flask route API contract
 
 ## Delivery Plan (next <2 months)
 

@@ -161,6 +161,5 @@ def find_route():
         "pathNodes": path
     }), 200
 ```
-*AI-generated example*
 
 ---
