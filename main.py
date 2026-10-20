@@ -132,7 +132,7 @@ def heuristics(goal_node, building):
 
 
 def a_star_algorithm(start_node, goal_node, h_vals, graph_data):
-    # Reference: https://youtu.be/F5reERwFiOI?si=9hb4dWgpnhmQjXC7
+    # Reference: https://youtu.be/F5reERwFiOI
     """
     Implement a_star_algorithm to find the shortest path
     from start location to goal and return that path as a
@@ -224,7 +224,7 @@ def print_path(path, building):
 
         else:
             # Determine next turning left/right
-            # Reference: https://stackoverflow.com/questions/27635188/algorithm-to-detect-left-or-right-turn-from-x-y-co-ordinates?utm_source=chatgpt.com
+            # Reference: https://stackoverflow.com/questions/27635188/algorithm-to-detect-left-or-right-turn-from-x-y-co-ordinates
             next_dir = (dx, dy)
             dm = prev_dir[0] * next_dir[1] - prev_dir[1] * next_dir[0]
             if dm != 0.0:
@@ -239,17 +239,18 @@ def print_path(path, building):
        
 
 # Main Program
-start = get_start_location(building_floors)
-goal = get_destination(building_floors)
+if __name__ == "__main__":
+    start = get_start_location(building_floors)
+    goal = get_destination(building_floors)
 
-print("\nFrom:", start["name"])
-print("To:", goal["name"])
+    print("\nFrom:", start["name"])
+    print("To:", goal["name"])
 
-h_vals = heuristics(goal, building_floors)
+    h_vals = heuristics(goal, building_floors)
 
-path = a_star_algorithm(start, goal, h_vals, graph)
+    path = a_star_algorithm(start, goal, h_vals, graph)
 
-if path:
-    print_path(path, building_floors)
-else:
-    print("No path found.")
+    if path:
+        print_path(path, building_floors)
+    else:
+        print("No path found.")
